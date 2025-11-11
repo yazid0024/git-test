@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Location de Jet Privé</title>
+    <link rel="stylesheet" href="jet.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <picture>
+            <img src="private-jet.avif" style="height: 300px;">
+            <h1>Louer un jet privé n'a jamais été aussi simple.</h1>
+        </picture>
+        <h1>Location de Jet Privé</h1>
+    </header>
+    <section id="home">
+        <h2>Bienvenue sur notre site de location de jets privés</h2>
+        <p>Découvrez notre gamme de jets privés pour un voyage de luxe et confortable.</p>
+    </section>
+    <section id="services">
+        <h2>Nos Services</h2>
+        <ul>
+            <li>Location de jets privés</li>
+            <li>Vols charters</li>
+            <li>Service de conciergerie</li>
+            <li>Planification de voyages</li>
+        </ul>
+    </section>
+    <section>
+        <h1>Les jets privés les plus demandés</h1>
+        <dl>
+        <dt>Gulfstream G600/G500</dt>
+        <dd><img src="jettt.jpg" alt="Gulfstream G600/G500" style="height: 150px;;"></dd>
+        <dt>lCessna Citation X</dt>
+        <dd><img src="Cessna Citation X.jpg" alt="Cessna Citation X" style="height: 150px;"></dd>
+        <dt>Dassault Falcon 7X</dt>
+        <dd><img src="Dassault Falcon 7X.jpg" alt="Dassault Falcon 7X" style="height: 150px;"></dd>
+        <dt>Bombardier Global 6000</dt>
+        <dd><img src="Bombardier Global 6000.jpg" alt="Bombardier Global 6000" style="height: 150px;" ></dd>
+        </dl>
+    </section>
+    <section>
+        <h3>Demande de devis</h3>
+    <form>
+         <p>
+             <label for="retour">avec retour :</label>
+             <input type="radio" name="retour" id="retour">
+         </p>
+        <p>
+            <label for="depart">Départ de :</label>
+            <input type="text" id="depart" placeholder="départ de">
+         </p>
+         <p>
+            <label for="destination">À destination de :</label>
+            <input type="text" id="destination" placeholder="a destination">
+         </p>
+         <p>
+            <label for="date">Date :</label>
+            <input type="date" id="date">
+        </p>
+         <button type="submit">Suivant</button>
+    </form>
+    </section>    
+    <section id="about">
+        <h2>À propos de nous</h2>
+        <p>Nous sommes une entreprise dédiée à offrir une expérience de voyage exclusive avec nos jets privés de luxe.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="azerty@email.com" required>
+            <label for="numéro">numéro de telephone:</label>
+            <textarea id="numéro" name="numéro" placeholder="06xxxxxxxx" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy;2024 Location de Jet Privé </p>
+    </footer>
+</body>
+</html>
